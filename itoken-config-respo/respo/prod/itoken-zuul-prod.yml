@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: itoken-zuul
+
+server:
+  port: 8769
+
+
+zuul:
+  ## 解决路由的时候不会将cookie带过去
+  sensitive-headers:
+  routes:
+    backend-admin:
+      path: /backend/admin/**
+      serviceId: itoken-web-admin
+    backend-posts:
+      path: /backend/posts/**
+      serviceId: itoken-web-posts

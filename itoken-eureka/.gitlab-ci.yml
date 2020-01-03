@@ -1,0 +1,25 @@
+stages:
+  - package
+  - push
+  - run
+
+package:
+  stage: package
+  script:
+    - $MAVEN_HOME/bin/mvn clean package
+    - cp target/itoken-eureka-1.0.0-SNAPSHOT.jar docker/
+    - cd docker
+    - docker build -t 192.168.10.11:8082/itoken/itoken-eureka .
+
+push:
+  stage: push
+  script:
+    - docker login 192.168.10.11:8082 -u admin -p Harbor12345
+    - docker push 192.168.10.11:8082/itoken/itoken-eureka
+
+run:
+  stage: run
+  script:
+    - cd docker
+    - docker-compose down
+    - docker-compose up -d

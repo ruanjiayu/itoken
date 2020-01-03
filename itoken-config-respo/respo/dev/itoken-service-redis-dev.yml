@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: itoken-service-redis
+
+server:
+  port: 8502
+

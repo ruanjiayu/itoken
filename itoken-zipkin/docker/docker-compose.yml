@@ -1,0 +1,11 @@
+version: "3"
+services:
+  itoken-zipkin:
+    restart: always
+    image: 192.168.10.11:8082/itoken/itoken-zipkin
+    container_name: itoken-zipkin
+    ports:
+      - 9411:9411
+
+networks:
+  itoken-network:

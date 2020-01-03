@@ -1,0 +1,7 @@
+stages:
+  - deploy
+
+deploy:
+  stage: deploy
+  script:
+    - $MAVEN_HOME/bin/mvn clean deploy

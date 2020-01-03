@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8888
+      name: itoken-clinet-admin, itoken-client-zipkin, itoken-eureka
+      label: master
+      profile: dev
