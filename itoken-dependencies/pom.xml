@@ -33,7 +33,7 @@
         <!--Environment Settings-->
         <mysql-connector.version>5.1.48</mysql-connector.version>
         <lombok-projectlombok.version>1.18.10</lombok-projectlombok.version>
-        <guava-google.version>28.1-jre</guava-google.version>
+        <guava-google.version>29.0-jre</guava-google.version>
         <nekohtml.version>1.9.22</nekohtml.version>
         <jackson.version>2.9.6</jackson.version>
         <swagger2-springfox.version>2.9.2</swagger2-springfox.version>
