@@ -31,7 +31,7 @@
         <spring-boot-github-pagehelper.version>1.2.13</spring-boot-github-pagehelper.version>
         <spring-boot-tk-mybatis.version>2.1.5</spring-boot-tk-mybatis.version>
         <!--Environment Settings-->
-        <mysql-connector.version>5.1.48</mysql-connector.version>
+        <mysql-connector.version>8.0.28</mysql-connector.version>
         <lombok-projectlombok.version>1.18.10</lombok-projectlombok.version>
         <guava-google.version>28.1-jre</guava-google.version>
         <nekohtml.version>1.9.22</nekohtml.version>
